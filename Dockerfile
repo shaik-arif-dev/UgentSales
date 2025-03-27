@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /server/index.ts
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
@@ -12,6 +12,9 @@ RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+
+
+RUN npm build
 
 # Expose the port the app runs on
 EXPOSE 8080
