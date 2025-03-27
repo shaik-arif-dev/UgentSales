@@ -1,20 +1,33 @@
-# Use Node.js official image
+# Use the official Node.js image as the base
 FROM node:20
 
-WORKDIR /app
+# Set the working directory in the container
+WORKDIR /server/index.ts
 
-# Copy package files and install dependencies
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile --production
 
-# Copy project files
+
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
+
+# Install dependencies
+# RUN npm install
+
+RUN yarn install
+
+#RUN npm update typescript
+
+
+# npm audit fix --force
+
+# Copy the rest of the application code
 COPY . .
 
-# Ensure the correct environment variable is used
-ENV PORT=8080
+RUN yarn build
 
-# Expose the correct port
+
+
+# Run the app
+CMD ["npm", "start"]
+
+# Expose the port the app runs on
 EXPOSE 8080
-
-# Start the server
-CMD ["node", "server.js"]

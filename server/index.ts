@@ -10,11 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/api/demo', (req: Request, res: Response) => {
-  res.json({ message: "🚀 Demo route is working!", timestamp: Date.now() });
-});
-
-
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -93,14 +88,10 @@ app.use((req, res, next) => {
 //   res.send('✅ UrgentSales API is running on Cloud Run!');
 // });
 
-  // const PORT = 8080; // Changed from 5000 to 5001
+  const PORT = process.env.PORT || 5001; // Changed from 5000 to 5001
   // const HOST = '0.0.0.0' // Changed from 0.0.0.0 to localhost
 
-  const PORT = process.env.PORT || 8080;
-
   app.listen(PORT, () => {
-    console.log(`🚀 Server is running on port ${PORT}`);
+      console.log(`Server running at ${PORT}`);
   });
-  
-  
 })();
