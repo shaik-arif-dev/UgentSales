@@ -89,9 +89,9 @@ app.use((req, res, next) => {
 // });
 
   const PORT = 8080; // Changed from 5000 to 5001
-  const HOST = '0.0.0.0' // Changed from 0.0.0.0 to localhost
+  // const HOST = '0.0.0.0' // Changed from 0.0.0.0 to localhost
 
   app.listen(PORT, HOST, () => {
-      console.log(`Server running at http://${HOST}:${PORT}`);
+      console.log(`Server running at ${PORT}`);
   });
 })();
