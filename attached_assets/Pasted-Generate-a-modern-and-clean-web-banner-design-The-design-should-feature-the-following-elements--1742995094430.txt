@@ -1,0 +1,21 @@
+Generate a modern and clean web banner design. The design should feature the following elements:
+
+1.  **"New Launch" Banner:** Place the text "New Launch" in a small, rectangular box with a light background. Position this box on the left side of the main banner area, aligned with the top.
+
+2.  **Two Content Sections:** Instead of three content boxes, create two distinct sections below the logo and title:
+    * **Left Section: "Projects" Title:** On the left side, display a section with the title "Projects."  This section should be visually distinct (e.g., a colored box or card) and imply that it's clickable or interactive.  Include a placeholder image or icon representative of projects.
+    * **Right Section:  Images Display:** On the right side, display a section dedicated to showcasing images related to projects. This could be a grid layout or a carousel that hints at multiple images.
+
+3.  **"View All New Projects" Button:** Place a prominent rectangular button with the text "View All New Projects" on the right side of the banner, below the two content sections. The button should be designed to look clickable and should be visually appealing.
+
+4.  **UI Style:** Maintain a clean, modern, and user-friendly UI design, similar to the provided image. Use a light color palette with subtle gradients or highlights to create a visually appealing interface.
+
+5.  **Functionality Implication:** The design should visually suggest that clicking the "Projects" section and the "View All New Projects" button will lead to different pages or actions.
+
+**Additional Tips:**
+
+* **Specify Image Size and Aspect Ratio:** If you have specific dimensions in mind, include them in the prompt (e.g., "1920x1080 pixels").
+* **Color Palette:** If you have a specific color scheme in mind, mention it in the prompt (e.g., "Use a light blue and orange color palette").
+* **Iterate and Refine:** You may need to experiment with the prompt and make adjustments based on the initial results.
+* **Use a Powerful Image Generator:** Tools like Midjourney, DALL-E 2, or Stable Diffusion can produce high-quality images based on detailed prompts.
+ this can add in after Top Urgent Sales's i want 
